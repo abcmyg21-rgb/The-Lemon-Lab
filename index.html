@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The Lemon Lab</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #333;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      margin: 32px auto;
+      background: rgba(255,255,255,0.98);
+      border-radius: 24px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+      padding: 32px 24px 40px 24px;
+    }
+    .logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2.8rem;
+      color: #fbb034;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 #fff4b3, 4px 4px 10px #f9d42355;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .tagline {
+      font-size: 1.25rem;
+      color: #ff4e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .about {
+      font-size: 1.1rem;
+      margin-bottom: 26px;
+      text-align: center;
+      color: #555;
+    }
+    .menu-title {
+      font-size: 1.7rem;
+      font-family: 'Fredoka One', cursive;
+      color: #fbb034;
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 16px;
+      letter-spacing: 1.5px;
+    }
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 30px auto;
+      max-width: 330px;
+    }
+    .menu-list li {
+      background: #ffe082;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      padding: 14px 18px;
+      font-size: 1.18rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px #fbb03422;
+    }
+    .menu-flavor {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.5px;
+    }
+    .menu-size {
+      font-size: 1.05rem;
+      color: #ff4e50;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+    .payment-section {
+      margin: 26px auto 14px auto;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .pay-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fbb034;
+      color: #fff;
+      font-weight: 700;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 2px 12px #fbb03433;
+      transition: background 0.2s;
+    }
+    .pay-btn:hover { background: #ff4e50; }
+    .qr-section {
+      text-align: center;
+      margin: 30px 0 0 0;
+    }
+    .qr-placeholder {
+      width: 120px;
+      height: 120px;
+      background: repeating-linear-gradient(
+        45deg,
+        #ffe082,
+        #ffe082 16px,
+        #fffde7 16px,
+        #fffde7 32px
+      );
+      border: 2px dashed #fbb034;
+      border-radius: 20px;
+      margin: 0 auto 8px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c1b246;
+      font-size: 0.96rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    @media (max-width: 650px) {
+      .container { padding: 18px 4vw 30px 4vw; }
+      .logo { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🍋 The Lemon Lab</div>
+    <div class="tagline">Fresh. Fun. Legendary Lemonade.</div>
+
+    <div class="about">
+      Welcome to The Lemon Lab—your go-to spot for legendary, super fresh lemonade with a twist! Whether you’re craving classic or feeling adventurous, we mix every cup right in front of you using real lemons, pure cane sugar, and our signature flavored syrups.<br><br>
+      Our goal? <strong>Delivering the best-tasting lemonade around, every single time.</strong>
+    </div>
+
+    <div class="menu-title">Menu</div>
+    <ul class="menu-list">
+      <li><span class="menu-flavor">Strawberry Lemonade</span> <span class="menu-size">16 oz</span></li>
+      <li><span class="menu-flavor">Blueberry Lemonade</span> <span class="menu-size">16 oz</span></li>
+      <li><span class="menu-flavor">Lavender Lemonade</span> <span class="menu-size">16 oz</span></li>
+      <li><span class="menu-flavor">Classic Lemonade</span> <span class="menu-size">16 oz</span></li>
+    </ul>
+
+    <div class="payment-section">
+      <a class="pay-btn" href="https://venmo.com/DamonPeterkin" target="_blank">Pay with Venmo</a>
+      <a class="pay-btn" href="https://cash.app/$DamonPeterkin" target="_blank">Pay with CashApp</a>
+    </div>
